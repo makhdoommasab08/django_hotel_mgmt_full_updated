@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+{% block title %}{{ hotel.name }}{% endblock %}
+{% block content %}
+<h2>{{ hotel.name }}</h2>
+<p>{{ hotel.address }}</p>
+<h3>Room types</h3>
+<ul>
+{% for rt in room_types %}
+  <li>{{ rt.name }} — capacity: {{ rt.capacity }} — price: {{ rt.base_price }} <a href="#">Book</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

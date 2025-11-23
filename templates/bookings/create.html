@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<h2>Book room {{ room.number }} ({{ room.room_type.name }})</h2>
+<form method="post">{% csrf_token %}
+  <label>First name: <input name="first_name"></label><br>
+  <label>Last name: <input name="last_name"></label><br>
+  <label>Email: <input name="email"></label><br>
+  <label>Phone: <input name="phone"></label><br>
+  <label>Check in: <input name="check_in" type="date"></label><br>
+  <label>Check out: <input name="check_out" type="date"></label><br>
+  <input type="hidden" name="total_amount" value="{{ room.room_type.base_price }}" />
+  <button type="submit">Confirm booking</button>
+</form>
+{% endblock %}

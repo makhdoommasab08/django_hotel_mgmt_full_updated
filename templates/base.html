@@ -1,0 +1,15 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>{% block title %}Hotel Management{% endblock %}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header><h1><a href="/">HotelMgmt</a></h1></header>
+  <nav><a href="/">Hotels</a> | <a href="/bookings/">Bookings</a></nav>
+  <main>{% block content %}{% endblock %}</main>
+  <footer><small>Powered by Django</small></footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<h2>Booking {{ booking.id }}</h2>
+<p>Guest: {{ booking.guest }}</p>
+<p>Room: {{ booking.room }}</p>
+<p>Check-in: {{ booking.check_in }} — Check-out: {{ booking.check_out }}</p>
+<p>Status: {{ booking.status }}</p>
+{% endblock %}

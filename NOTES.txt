@@ -1,0 +1,5 @@
+
+This scaffold is intentionally minimal to be readable.
+- Run migrations after extracting.
+- Create some Hotels / RoomTypes via admin before testing bookings.
+- For production: set SECRET_KEY via env, DEBUG=False, and use PostgreSQL.
